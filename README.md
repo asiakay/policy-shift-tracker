@@ -11,15 +11,6 @@ It allows users to **search, filter, and track major policy shifts**, including 
 - 🕒 **Planned feature: Historical tracking of policy changes**
 - 📈 **Planned feature: Policy trend timeline**
 
-## 🛠️ Installation (Local Development)
-To run locally:
-```sh
-git clone https://github.com/asiakay/policy-shift-tracker.git
-cd YOUR_REPO
-```
-Since this project is a static web app (HTML, CSS, JavaScript), simply open `index.html` in a browser.
-
-If you plan to host it on **Cloudflare Pages**, follow the [Deployment Guide](#deployment).
 
 ## 🔗 API References
 - **Federal Register API**: [https://www.federalregister.gov/developers](https://www.federalregister.gov/developers)
