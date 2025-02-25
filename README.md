@@ -14,7 +14,7 @@ It allows users to **search, filter, and track major policy shifts**, including 
 ## 🛠️ Installation (Local Development)
 To run locally:
 ```sh
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/asiakay/policy-shift-tracker.git
 cd YOUR_REPO
 ```
 Since this project is a static web app (HTML, CSS, JavaScript), simply open `index.html` in a browser.
