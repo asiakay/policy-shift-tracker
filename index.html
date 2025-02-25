@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Shift Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Progressive Web App (PWA) Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Policy Tracker">
+</head>
+<body>
+
+    <!-- ✅ PWA Service Worker -->
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js")
+        .then(() => console.log("✅ Service Worker Registered"))
+        .catch(err => console.error("❌ Service Worker Error", err));
+    }
+    </script>
+
+    <h1>📜 Policy Shift Tracker</h1>
+
+    <!-- 🔎 Search Bar -->
+    <div id="search-container">
+        <input type="text" id="searchInput" placeholder="Search policies...">
+        <input type="date" id="startDate">
+        <input type="date" id="endDate">
+        <button id="searchButton">🔍 Search</button>
+    </div>
+
+    <!-- 🔄 Action Buttons -->
+    <div class="button-container">
+        <button onclick="fetchAndUpdate()">🔄 Refresh Policies</button>
+        <button onclick="loadMorePolicies()">➕ Load More</button>
+    </div>
+
+    <!-- 📜 Policy Updates Section -->
+    <h3>📜 Latest Policy Updates</h3>
+    <!-- ✅ Ensure this div exists for policy display -->
+    <div id="policyList" class="card-container"></div>
+
+  <button id="loadMoreButton" style="display:none;">🔄 Load More Results</button>
+  
+    <!-- 📩 Subscribe to Policy Alerts -->
+    <h3>📩 Subscribe to Policy Alerts</h3>
+    <form id="subscribeForm">
+        <input type="email" id="emailInput" placeholder="Enter your email..." required>
+        <button type="submit">✅ Subscribe</button>
+    </form>
+
+    <!-- 🔔 Notification Preferences -->
+    <h3>🔔 Notification Preferences</h3>
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="musk" checked> Musk & SpaceX</label>
+        <label><input type="checkbox" id="ai" checked> AI & Regulations</label>
+        <label><input type="checkbox" id="executive" checked> Executive Orders</label>
+    </div>
+    <button id="savePreferences">✅ Save Preferences</button>
+
+    <!-- ✅ Debug Console -->
+    <div id="debugConsole" class="debug-console"></div>
+    <script>
+    function logDebug(msg) {
+        let debugDiv = document.getElementById("debugConsole");
+        debugDiv.innerHTML += msg + "<br>";
+        console.log(msg); // Also log it to the browser console
+    }
+
+    // Capture all console errors
+    window.onerror = function(message, source, lineno, colno, error) {
+        logDebug(`❌ Error: ${message} at ${source}:${lineno}:${colno}`);
+    };
+    </script>
+
+    <!-- ✅ Load Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- ✅ Load Firebase Configuration -->
+    <script src="js/firebaseConfig.js"></script>
+
+    <!-- ✅ Load Fetch & UI Logic -->
+    <script src="js/fetchData.js"></script>
+    <script src="js/main.js"></script>
+   <!-- <script src="js/notifications.js"></script> -->
+
+</body>
+</html>
