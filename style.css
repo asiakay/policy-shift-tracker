@@ -1,112 +1,114 @@
 /* ✅ General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
 /* ✅ Search Bar */
 #search-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-#searchInput, input[type="date"], button {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+#searchInput,
+input[type="date"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 /* ✅ Buttons */
 .button-container {
-    margin-top: 10px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* ✅ Policy List (Card Grid Layout) */
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
-
 
 /* 🏛️ Policy Cards - Ensure Same Width */
 .policy-card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure consistency */
-    max-width: 600px; /* Set a fixed maximum width */
-    margin: 15px auto; /* Center cards */
-    text-align: left;
-    border-left: 5px solid #007bff;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure consistency */
+  max-width: 600px; /* Set a fixed maximum width */
+  margin: 15px auto; /* Center cards */
+  text-align: left;
+  border-left: 5px solid #007bff;
 }
 
 /* 🏛️ Responsive Grid */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center cards horizontally */
-    gap: 15px; /* Add space between cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards horizontally */
+  gap: 15px; /* Add space between cards */
 }
 
 /* 🔹 Header Formatting */
 .policy-header h2 {
-    font-size: 18px;
-    color: #333;
-    margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 5px 0;
 }
 
 /* 📜 Policy Content */
 .policy-body p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
 }
 
 /* 🔗 Read More Button */
 .policy-footer {
-    text-align: right;
+  text-align: right;
 }
 
 .policy-footer .read-more {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .policy-footer .read-more:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 /* ✅ Empty Data Styling */
 .no-data {
-    font-style: italic;
-    color: #666;
+  font-style: italic;
+  color: #666;
 }
