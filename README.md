@@ -7,7 +7,7 @@ It allows users to **search, filter, and track major policy shifts** in a clean 
 ## 📂 Features
 - 🔍 **Real-time policy tracking**
 - 📊 **Search by keywords & filters**
-- 🚨 **Planned feature: Alerts for specific topics (Musk, SpaceX, etc.)**
+- 🚨 **Planned feature: Alerts for specific topics (data, cybersecurity, etc.)**
 - 🕒 **Planned feature: Historical tracking of policy changes**
 - 📈 **Planned feature: Policy trend timeline**
 
