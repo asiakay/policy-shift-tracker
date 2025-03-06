@@ -57,7 +57,7 @@ document.getElementById('subscribe-form').addEventListener('submit', async funct
   event.preventDefault();
   const email = document.getElementById('email').value;
   
-  const response = await fetch('https://your-worker-url.workers.dev', {
+  const response = await fetch('https://policy-shift-tracker.pages.dev/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email })
