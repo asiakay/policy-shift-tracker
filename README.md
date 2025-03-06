@@ -2,12 +2,12 @@
 
 ## 🚀 Overview
 This project tracks **U.S. government policy changes** using the **Federal Register API** and other sources. 
-It allows users to **search, filter, and track major policy shifts** in a clean streamlined UI.
+It allows users to **search, filter, and track major policy shifts**, including those related to **tech privatization, Elon Musk, and AI regulations**.
 
 ## 📂 Features
 - 🔍 **Real-time policy tracking**
 - 📊 **Search by keywords & filters**
-- 🚨 **Planned feature: Alerts for specific topics (data, cybersecurity, etc.)**
+- 🚨 **Planned feature: Alerts for specific topics (Musk, SpaceX, etc.)**
 - 🕒 **Planned feature: Historical tracking of policy changes**
 - 📈 **Planned feature: Policy trend timeline**
 
